@@ -1,0 +1,23 @@
+FUNCTION FibonacciSequence(n) : INTEGER
+VAR
+    n : INTEGER := 0;
+    sum : INTEGER := 0;
+    i : INTEGER :=2;
+    step : INTEGER := 1;
+    a : INTEGER := 0;
+    b : INTEGER := 1;
+BEGIN
+    if (n === 0) {
+        return 0;
+    }
+    if (n === 1) {
+        return 1;
+    }
+    FOR i FROM 2 TO n STEP step  DO
+     sum = a + b;
+     a = b;
+     b = sum;
+    
+    END_FOR
+    RETURN sum ;
+END

@@ -1,0 +1,7 @@
+FUNCTION Power(x,y) : INTEGER
+VAR
+    x : INTEGER;
+    y : INTEGER;
+BEGIN
+    RETURN Math.pow(x,y);
+END

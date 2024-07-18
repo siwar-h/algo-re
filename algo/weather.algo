@@ -1,0 +1,30 @@
+FUNCTION WeatherClothing( Kelvin) : FLOAT
+VAR
+    celsius : FLOAT;
+    Kelvin : FLOAT := 0;
+    temperate : STRING;
+
+BEGIN
+celsius=Kelvin−273.15
+    if(celsius < 0°C){
+        temperate =Very cold:Wear a heavy coat, gloves, and a hat;
+    }
+    if(0°C< celsius <10°C){
+        temperate= cold:Wear a coat and a warm hat;
+    }
+    if(10°C <celsius <20°C){
+        temperate= Temperate:A jacket or sweater should be fine;
+    }
+    if(20°C <celsius< 30°C){
+        temperate= Warm temperate:;
+
+    }
+    if(30°C< celsius< 40°C ){
+        temperate= Warm:A t-shirt and jeans are suitable;
+
+    }
+    if(celsius> 40°C){
+       temperate= Very hot:Wear light clothing, like shorts and a t-shirt
+    }
+    RETURN temperate ;
+END
